@@ -17,6 +17,7 @@ public class GameDTO {
     private String longDescription;
 
     public GameDTO(Game entity) {
+        //Passa todas as propriedades da entidade para o dtp
         BeanUtils.copyProperties(entity, this);
     }
 
